@@ -1,12 +1,12 @@
 <html>
-	<head>
-		<!-- Bootstrap Core CSS -->
-		<link href="../css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom CSS -->
-		<link href="../css/toggle-sidebar.css" rel="stylesheet">
-	</head>
-  <body>
-      <script>
+    <head>
+        <!-- Bootstrap Core CSS -->
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+            <!-- Custom CSS -->
+            <link href="css/toggle-sidebar.css" rel="stylesheet">
+            </head>
+            <body>
+                <script>
           function toNum(n){
               return parseInt(n);
           }
@@ -31,30 +31,54 @@
               alert(res);
           }
       </script>
-     <form name="calc">
-          Num1: <input type="text" id="num1"><br>
-          Num2: <input type="text" id="num2"><br>
-    </form>
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">				
-					<button style="padding: 5px 45px;" onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
-					<button style="padding: 5px 35px;" onclick="subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
-			</div>
-		</div>
-	</div>	
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-	<button style="padding: 5px 35px;" onclick="multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
-	<button style="padding: 5px 35px;" onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
-			</div>
-		</div>
-	</div>	
-		<!-- jQuery -->
-		<script src="../js/jquery.js"></script>
-		<!-- Bootstrap Core JavaScript -->
-		<script src="../js/bootstrap.min.js"></script>
-  </body>
-</html>
+                <style>
+		*{
+			width: 100%;
+		}
+	</style>
+                <div class="container">
+                    <div class="col-md-12">
+                        <form name="calc">
+                            <div class="row">
+                                <div class="col-md-3">
+				   Num1:
+				   </div>
+                                <div class="col-md-9">
+                                    <input type="text" id="num1">
+                                    </div>
+                                </div>
+                                <br>
+                                    <div class="row">
+                                        <div class="col-md-3">
+          Num2: 
+		  </div>
+                                        <div class="col-md-9">
+                                            <input type="text" id="num2">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <button  onclick="add(document.querySelector('#num1').value, document.querySelector('#num2').value)">Add</button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button  onclick="subtract(document.querySelector('#num1').value, document.querySelector('#num2').value)">Subtract</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button  onclick="multiply(document.querySelector('#num1').value, document.querySelector('#num2').value)">Multiply</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button  onclick="divide(document.querySelector('#num1').value, document.querySelector('#num2').value)">Divide</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- jQuery -->
+                                <script src="../js/jquery.js"></script>
+                                <!-- Bootstrap Core JavaScript -->
+                                <script src="../js/bootstrap.min.js"></script>
+                            </body>
+                        </html>
